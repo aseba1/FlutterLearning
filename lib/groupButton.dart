@@ -8,7 +8,13 @@ class GroupButton extends StatelessWidget {
 
   Widget build(BuildContext context){
     return ElevatedButton(onPressed: null, 
-      child: Text("hello"));
+      child: SizedBox(
+        width: 100,
+        child: Column(
+        children: [
+          Image(image: AssetImage('assets/images/smile.png'), fit: BoxFit.cover),
+          Text("Hello!"),
+        ],),) );
   }
 
   //might want to use SizedBox for these buttons because of planning to put them in a grid? 
