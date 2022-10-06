@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlearning/groupButton.dart';
+import 'groupButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -102,6 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            GroupButton(),
           ],
         ),
       ),
